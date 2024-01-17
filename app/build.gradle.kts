@@ -15,6 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        buildConfigField("String", "BASE_URL", "\"https://api.openweathermap.org/data/2.5/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -38,6 +39,7 @@ android {
     buildFeatures {
         dataBinding = true
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -53,6 +55,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
     implementation("com.squareup.picasso:picasso:2.71828")
+    implementation ("androidx.activity:activity-ktx:1.8.2")
 
     //connect api
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -60,6 +63,11 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
     implementation("com.google.code.gson:gson:2.9.0")
+
+    //lifecycle
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
     //location
     implementation("com.google.android.gms:play-services-location:21.0.1")
