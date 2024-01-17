@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Adengs</string>
+    <string name="kota">Kabupaten Bogor</string>
+    <string name="suhu">27,5</string>
+    <string name="desc">Hujan Badai</string>
+    <string name="wind">Wind speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="air">Air pressure</string>
+    <string name="number">-</string>
+</resources>
